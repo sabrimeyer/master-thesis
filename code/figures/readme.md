@@ -1,1 +1,1 @@
-This folder contains the written code used for the numerical simulations in the thesis.
+This folder contains the generated images used as figures in the thesis.
