@@ -1,7 +1,7 @@
 # Eigenspectra of Nonlinear Neural Networks
 ## Master Thesis in Mathematics
 
-Author: Sabri Meyer
+Author: Sabri Meyer\
 Supervisors: Prof. Dr. Aurelien Lucchi and Prof. Dr. Jiří Černý\
 Submission: September 15, 2023, University of Basel
 
