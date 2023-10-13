@@ -1,4 +1,4 @@
-# Eigenspectra of Nonlinear Neural Networks
+# Hessian Eigenspectra of Nonlinear Neural Networks
 ## Master Thesis in Mathematics
 
 Author: Sabri Meyer\
