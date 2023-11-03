@@ -1715,7 +1715,7 @@ In order to handle the dependencies in (\ref{eq:linearcombination}) between the 
 \bigskip
 \begin{lemma}
 Assume that $\phi:\mathbb{R}\to\mathbb{R}$ is $L_\phi$-Lipschitz continuous with $L_\phi>0$, and $x\sim\mathcal{N}(0,I_d)$ a normal random vector. Define $\tilde{x}:=\phi(W^{(1)}x)$, where $W^{(1)}\in\mathbb{R}^{d\times d}$ is arbitrary with Assumption \ref{ass:scaling-W}. Then, for any matrix $A\in\mathbb{R}^{d\times d}$ with $\|A\|\,\leq\mathcal{O}(1)$ as $d\to\infty$, there exist $C,c>0$ (independent of $d$) such that for all $t\geq0$
-$$P\left(\left|\frac{1}{d}x^\top A x-\frac{1}{d}\operatorname{Tr}\left(\Sigma_\phi(W^{(1)})A\right)\right|\geq t\right)\leq C\exp\left(-\frac{c\,d}{\|W^{(1)}\|^2L_\phi^2}\min\left\{\frac{t^2}{t_0^2},t^2\right\}\right),$$
+$$P\left(\left|\frac{1}{d}\tilde{x}^\top A \tilde{x}-\frac{1}{d}\operatorname{Tr}\left(\Sigma_\phi(W^{(1)})A\right)\right|\geq t\right)\leq C\exp\left(-\frac{c\,d}{\|W^{(1)}\|^2L_\phi^2}\min\left\{\frac{t^2}{t_0^2},t^2\right\}\right),$$
 where $t_0=|\phi(0)|+L_\phi\|W^{(1)}\|\sqrt{n/d}=\mathcal{O}(1)$.\label{thm:louart}
 \end{lemma}
 \bigskip
@@ -1735,7 +1735,7 @@ $$\frac{1}{d}\tilde{x}^\top A\tilde{x}\simeq\frac{1}{d}\operatorname{Tr}\left(\S
 We remind the reader that we omit detailed computations and explanations of the steps in the Proof of our following main result, due to its similarity with the proof of Theorem \ref{thm:mainresult-1}. Therefore, we strongly suggest to read the proof of Theorem \ref{thm:mainresult-1} first.
 \bigskip
 \begin{theorem}[Main Result II with Weights]
-Let $X=[x_1,\dots,x_n]\in\mathbb{R}^{d\times n}$ satisfy Assumption \ref{ass:data}, and $W^{(1)}\in\mathbb{R}^{d\times d}$ satisfy Assumption \ref{ass:scaling-W}, respectively. Let $Q_d(z)$ be the resolvent of $H_2$, and assume that $n/d\to\alpha\in(1,\infty)$ as $n,d\to\infty$. Furthermore, assume that $\phi:\mathbb{R}\to\mathbb{R}$ is Lipschitz continuous. Then the Stieltjes transform $m_{H_2}(z)$ satisfies, for all $z\in\mathbb{C}_+$ almost surely as $n,d\to\infty$, that
+Let $X=[x_1,\dots,x_n]\in\mathbb{R}^{d\times n}$ have i.i.d. entries $X_{ij}\sim\mathcal{N}(0,1)$, and $W^{(1)}\in\mathbb{R}^{d\times d}$ satisfy Assumption \ref{ass:scaling-W}, respectively. Let $Q_d(z)$ be the resolvent of $H_2$, and assume that $n/d\to\alpha\in(1,\infty)$ as $n,d\to\infty$. Furthermore, assume that $\phi:\mathbb{R}\to\mathbb{R}$ is Lipschitz continuous. Then the Stieltjes transform $m_{H_2}(z)$ satisfies, for all $z\in\mathbb{C}_+$ almost surely as $n,d\to\infty$, that
 \begin{equation*}
 m_{H_2}(z)\simeq\frac{1}{d}\operatorname{Tr}\left(\frac{\Sigma_\phi(W^{(1)})}{1+\alpha^{-1}\delta_d(z)}-zI_d\right)^{-1},
 \end{equation*}
